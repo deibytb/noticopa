@@ -12,6 +12,6 @@ import retrofit.http.Headers;
  */
 public interface ServiceApiInterface {
     @Headers({"Content-Type: application/json", "application-type: REST" })
-    @GET("Ruta")
+    @GET("/tournaments")
     void tournaments( Callback<TournamentResponse> callback);
 }

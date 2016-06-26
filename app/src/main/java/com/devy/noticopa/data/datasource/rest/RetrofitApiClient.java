@@ -20,7 +20,7 @@ public class RetrofitApiClient {
         if (serviceApiInterface == null) {
 
             RestAdapter restAdapter = new RestAdapter.Builder()
-                    .setEndpoint("URL")
+                    .setEndpoint("https://noti-copa.herokuapp.com/api/v1")
                     .setClient(new OkClient(getClient()))
 
                     .build();
